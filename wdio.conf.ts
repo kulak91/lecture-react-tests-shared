@@ -26,7 +26,7 @@ const config: Options.Testrunner = {
       acceptInsecureCerts: true,
     },
   ],
-  logLevel: 'silent',
+  logLevel: 'debug',
   bail: 0,
   baseUrl: APP_URL,
   waitforTimeout: 10000,
