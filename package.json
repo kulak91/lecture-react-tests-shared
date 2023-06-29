@@ -2,8 +2,8 @@
   "name": "tests",
   "private": "true",
   "engines": {
-    "node": ">=16 <17",
-    "npm": ">=8 <9"
+    "node": ">=14 <17",
+    "npm": ">=6 <9"
   },
   "scripts": {
     "test:base": "wdio run ./wdio.conf.ts --suite base",
