@@ -2,7 +2,7 @@
   "exclude": ["node_modules", "merge.js"],
   "compilerOptions": {
     "moduleResolution": "node",
-    "types": ["node", "webdriverio/async", "@wdio/mocha-framework", "devtools"],
+    "types": ["node", "webdriverio/async", "@wdio/mocha-framework"],
     "target": "es2017",
     "allowJs": true,
     "esModuleInterop": true,
