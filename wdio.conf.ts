@@ -20,11 +20,17 @@ const config: Options.Testrunner = {
   },
   maxInstances: 10,
   capabilities: [
-    {
-      maxInstances: 5,
-      browserName: 'chrome',
-      acceptInsecureCerts: true,
-    },
+    // {
+    //   maxInstances: 5,
+    //   browserName: 'chrome',
+    //   acceptInsecureCerts: true,
+    // },
+     {
+        browserName: 'chrome',
+        'wdio:devtoolsOptions': {
+            headless: true,
+        },
+      },
   ],
   logLevel: 'debug',
   bail: 0,
