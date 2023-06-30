@@ -4,8 +4,8 @@ import { Bookings as BookingsActions } from '../../page-actions/page-actions';
 const bookingListComponent = new BookingListComponent();
 const bookingsActions = new BookingsActions();
 
-describe('BOOKINGS_PAGE', async function () {
-  it('BOOKINGS_TEST_1', async function () {
+describe('Bookings Page', async function () {
+  it('booking should contain title, date, number of guests and final price', async function () {
     const BOOKING_ITEM_INDEX = 0;
 
     await bookingsActions.openPage();
@@ -23,7 +23,7 @@ describe('BOOKINGS_PAGE', async function () {
       .waitForExist();
   });
 
-  it('BOOKINGS_TEST_2', async function () {
+  it('should cancel a booking on cancel button click', async function () {
     const BOOKING_ITEM_INDEX = 0;
     const BOOKING_ITEM_DECREMENT_NUMBER = 1;
 
@@ -38,7 +38,7 @@ describe('BOOKINGS_PAGE', async function () {
     );
   });
 
-  it('BOOKINGS_TEST_3', async function () {
+  it('should sort bookings by date ascending', async function () {
     await bookingsActions.openPage();
     const bookingItemsCount = await bookingListComponent.Bookings.length;
 
