@@ -15,7 +15,7 @@ const config: Options.Testrunner = {
   },
   specs: ['./src/specs/**/*.spec.ts'],
   suites: {
-    base: ['./src/specs/base/**'],
+    base: ['./src/specs/base/bookings-page.spec.ts'],
     advanced: ['./src/specs/advanced/**'],
   },
   maxInstances: 10,
