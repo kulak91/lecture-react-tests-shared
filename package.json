@@ -21,6 +21,7 @@
     "@wdio/spec-reporter": "7.29.1",
     "axios": "0.27.2",
     "chromedriver": "110.0.0",
+    "devtools": "8.11.0",
     "dotenv": "16.0.1",
     "eslint": "8.17.0",
     "eslint-plugin-import": "2.26.0",
