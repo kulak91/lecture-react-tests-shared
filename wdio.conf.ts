@@ -32,7 +32,7 @@ const config: Options.Testrunner = {
         },
       },
   ],
-  logLevel: 'debug',
+  logLevel: 'silent',
   bail: 0,
   baseUrl: APP_URL,
   waitforTimeout: 10000,
@@ -40,11 +40,11 @@ const config: Options.Testrunner = {
   connectionRetryCount: 3,
   services: [        ['selenium-standalone', { drivers: { firefox: '0.33.0', chrome: true, chromiumedge: 'latest' } }], 'devtools'],
   framework: 'mocha',
-  // reporters: [
-  // 'json',
-  // ],
-  reporters: [['spec', { showPreface: false }]],
-  // outputDir: './results',
+  reporters: [
+  'json',
+  ],
+  // reporters: [['spec', { showPreface: false }]],
+  outputDir: './results',
   mochaOpts: {
     ui: 'bdd',
     timeout: 60000,
