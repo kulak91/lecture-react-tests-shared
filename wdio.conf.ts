@@ -13,7 +13,7 @@ const config: Options.Testrunner = {
       project: './tsconfig.json',
     },
   },
-  specs: ['./src/specs/**/bookings-page.spec.ts'],
+  specs: ['./src/specs/**/*.spec.ts'],
   suites: {
     base: ['./src/specs/base/**'],
     advanced: ['./src/specs/advanced/**'],
