@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const { APP_URL } = process.env;
+const { APP_URL, AUTOTEST_APP_URL } = process.env;
 
 const config: Options.Testrunner = {
   autoCompileOpts: {
@@ -34,7 +34,7 @@ const config: Options.Testrunner = {
   ],
   logLevel: 'silent',
   bail: 0,
-  baseUrl: APP_URL,
+  baseUrl: AUTOTEST_APP_URL || APP_URL,
   waitforTimeout: 10000,
   connectionRetryTimeout: 120000,
   connectionRetryCount: 3,
