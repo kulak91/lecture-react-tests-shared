@@ -36,7 +36,7 @@ const config: Options.Testrunner = {
   bail: 0,
   baseUrl: AUTOTEST_APP_URL || APP_URL,
   waitforTimeout: 10000,
-  connectionRetryTimeout: 120000,
+  connectionRetryTimeout: 12000,
   connectionRetryCount: 3,
   services: [        ['selenium-standalone', { drivers: { firefox: '0.33.0', chrome: true, chromiumedge: 'latest' } }]],
   framework: 'mocha',
@@ -47,7 +47,7 @@ const config: Options.Testrunner = {
   outputDir: './results',
   mochaOpts: {
     ui: 'bdd',
-    timeout: 60000,
+    timeout: 2000,
   },
 };
 
